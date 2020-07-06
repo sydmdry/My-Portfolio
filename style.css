@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/*Headshot Smaller*/
+img {
+  width: 50%;
+  height: 100%;
+}
+
+/*Font for Header and Intro*/
+.font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Header*/
+header {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+/*Fix Header Text*/
+h1 {
+  font-size: 60px;
+  background-color:#330000;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/*Header General*/
+header, h1, h2 {
+  margin: 0px;
+}
+
+/*Intro*/
+.intro {
+  margin: 0px;
+  padding-left: 10%;
+}
+
+.intro h3 {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+/*hr*/
+hr {
+  border: 2px solid #330000;
+  width: 50%;
+}
+
+/*links*/
+a:link{
+  color: #f2f2f2;
+}
+a:hover {
+  color:#330000;
+}
+a:visited {
+  color: #d9d9d9;
+}
+a:active {
+  color: antiquewhite; 
+}
+
+/*Mobile First*/
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.sections {
+  flex: 1;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #330000;
+}
+.sections h2 {
+  text-align: center;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 40px;
+  color: #d9d9d9;
+}
+.sections p, ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: white;
+  list-style: none;
+}
+.projects {
+  text-align: center;
+  color: white;
+}
+h4 {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 25px;
+}
+.links {
+  text-align: center;
+}
+
+/*Desktop*/
+@media all and (min-width: 700px) {
+  .wrap {
+    display: flex;
+    flex-direction: row;
+  }
+  .sections, .link {
+    flex: 1;
+    margin: 15px;
+  }
+  .sections h2 {
+    font-size: 55px;
+  }
+  .sections p, ul{
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  .links{
+    font-size: 20px;
+  }
+ }
